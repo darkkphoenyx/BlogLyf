@@ -4,7 +4,7 @@ function App() {
   console.log(config.appwriteUrl);
   return (
     <>
-      <div className="text-4xl">MegaBlog</div>
+      <div className="text-4xl">BlogLyf</div>
     </>
   );
 }
