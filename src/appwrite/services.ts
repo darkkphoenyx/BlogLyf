@@ -133,6 +133,7 @@ export class Service {
     }
   }
 
+  //delete file
   async deleteFile(fileId: string) {
     try {
       await this.bucket.deleteFile(config.appwriteBucketId, fileId);
@@ -143,6 +144,7 @@ export class Service {
     return false;
   }
 
+  //get filePreview
   async getFilePreview(fileId: string) {
     try {
       return this.bucket.getFilePreview(config.appwriteBucketId, fileId);
